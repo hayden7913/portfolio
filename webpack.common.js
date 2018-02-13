@@ -3,14 +3,7 @@ var webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  // devtool: 'inline-source-map',
-  devtool: 'cheap-module-eval-source-map',
-  entry: [
-    'webpack-dev-server/client?http://localhost:3000',
-    'webpack/hot/only-dev-server',
-    'react-hot-loader/patch',
-    './src/index'
-  ],
+
   output: {
     path: path.join(__dirname, 'build'),
     filename: 'bundle.js',
