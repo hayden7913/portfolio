@@ -1,17 +1,9 @@
 var path = require('path');
 var webpack = require('webpack');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  // devtool: 'inline-source-map',
-  devtool: 'cheap-module-eval-source-map',
-  entry: [
-    'webpack-dev-server/client?http://localhost:3000',
-    'webpack/hot/only-dev-server',
-    'react-hot-loader/patch',
-    './src/index'
-  ],
+
   output: {
     path: path.join(__dirname, 'bundle'),
     filename: 'bundle.js',
@@ -31,7 +23,6 @@ module.exports = {
     },
   ]},
   plugins: [
-    new CleanWebpackPlugin(['bundle']),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'public', 'index.html'),
     }),
