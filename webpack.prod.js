@@ -7,15 +7,16 @@ const common = require('./webpack.common.js');
 
 module.exports = merge(common, {
   devtool: 'inline-source-map',
-  module: {
-    loaders: [
-      {
-        test: /(\.scss$|\.css$)/,
-        loader : ExtractTextPlugin.extract('style-loader', 'css-loader', 'sass-loader'),
-      },
-    ],
-  },
+  // module: {
+  //   loaders: [
+  //     {
+  //       test: /(\.scss$|\.css$)/,
+  //       loader : ExtractTextPlugin.extract('style-loader', 'css-loader', 'sass-loader'),
+  //     },
+  //   ],
+  // },
   plugins: [
+    new CleanWebpackPlugin(['build']),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('production'),
     }),

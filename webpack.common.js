@@ -13,7 +13,7 @@ module.exports = {
     './src/index'
   ],
   output: {
-    path: path.join(__dirname, 'bundle'),
+    path: path.join(__dirname, 'build'),
     filename: 'bundle.js',
     publicPath: '/'
   },
@@ -29,9 +29,14 @@ module.exports = {
       exclude: /node_modules/,
       loaders: ['file-loader'],
     },
+    {
+      test: /(\.scss$|\.css$)/,
+      exclude: /node_modules/,
+      include: path.resolve(__dirname, 'src', 'styles'),
+      loaders: ['style-loader', 'css-loader', 'sass-loader'],
+    },
   ]},
   plugins: [
-    new CleanWebpackPlugin(['bundle']),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'public', 'index.html'),
     }),
