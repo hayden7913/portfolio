@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url(/e06795ebcaca9b1ef0240d694adc5d8c.eot);
+  src:  url(/e06795ebcaca9b1ef0240d694adc5d8c.eot#iefix) format('embedded-opentype'),
+    url(/1131f2af5e91fca7ed3d0248eb81ff90.ttf) format('truetype'),
+    url(/bd28c9569dd2e59c8cd4222fa9cde3f2.woff) format('woff'),
+    url(/2e707bd5395e7e81bef436eef4d2bcde.svg#icomoon) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search3:before {
+  content: "\E904";
+}
+.icon-search1:before {
+  content: "\E902";
+}
+.icon-plus:before {
+  content: "\E900";
+}
+.icon-search2:before {
+  content: "\E903";
+}
+.icon-plus:before {
+  content: "\E900";
+}
+
+.icon-trash:before {
+  content: "\E901";
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MiLCJzb3VyY2VSb290IjoiIn0=*/
