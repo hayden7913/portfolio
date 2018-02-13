@@ -1,6 +1,6 @@
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+// const ExtractTextPlugin = require('extract-text-webpack-plugin');
+// const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const merge = require('webpack-merge');
 const webpack = require('webpack');
 
@@ -17,12 +17,12 @@ module.exports = merge(common, {
   //   ],
   // },
   plugins: [
-    new CleanWebpackPlugin(['build']),
+    new CleanWebpackPlugin(['bundle']),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('production'),
     }),
-    new ExtractTextPlugin('style.css'),
-    new webpack.optimize.OccurrenceOrderPlugin(),
-    new UglifyJSPlugin({ sourceMap: true }),
+    // new ExtractTextPlugin('style.css'),
+    // new webpack.optimize.OccurrenceOrderPlugin(),
+    // new UglifyJSPlugin({ sourceMap: true }),
   ],
 });
