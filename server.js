@@ -7,7 +7,7 @@ process.env.NODE_ENV = 'production'
 
 new WebpackDevServer(webpack(config), {
   publicPath: config.output.publicPath,
-  hot: false,
+  hot: true,
   historyApiFallback: true,
   stats: {
     timings: true,

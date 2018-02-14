@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
+import Portfolio from './Portfolio';
 
 export default function LandingPage() {
   return (
-    <div>Hola Mundial</div>
+    <div className="container">
+      <Portfolio />
+    </div>
   );
 }

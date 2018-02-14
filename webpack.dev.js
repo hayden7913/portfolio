@@ -11,16 +11,16 @@ module.exports = merge(common, {
     'react-hot-loader/patch',
     './src/index'
   ],
-  module: {
-    loaders: [
-      {
-        test: /(\.scss$|\.css$)/,
-        exclude: /node_modules/,
-        include: path.resolve(__dirname, 'src', 'styles'),
-        loaders: ['style-loader', 'css-loader', 'sass-loader'],
-      },
-    ],
-  },
+  // module: {
+  //   loaders: [
+  //     {
+  //       test: /(\.scss$|\.css$)/,
+  //       exclude: /node_modules/,
+  //       include: path.resolve(__dirname, 'src', 'styles'),
+  //       loaders: ['style-loader', 'css-loader', 'sass-loader'],
+  //     },
+  //   ],
+  // },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
   ],
