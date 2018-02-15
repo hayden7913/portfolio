@@ -4,10 +4,12 @@
   'normalize',
   'base',
   'helpers',
+  'fonts',
   'float-grid',
   'custom-grid'
 ;
 
 @import
+  'components/nav',
   'components/portfolio'
 ;

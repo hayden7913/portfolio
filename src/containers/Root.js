@@ -4,13 +4,13 @@ import { Provider } from 'react-redux';
 import { Route, HashRouter  } from 'react-router-dom';
 import { ConnectedRouter } from 'react-router-redux';
 
-import Routes from '../routes';
+import LandingPage from '../components/LandingPage';
 
 export default class Root extends Component {
   render() {
     return (
       <HashRouter>
-          { Routes }
+          <LandingPage />
       </HashRouter>
     );
   }

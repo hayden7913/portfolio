@@ -1,0 +1,26 @@
+.nav {
+  font-weight: 500;
+  // border: 1px solid #000;
+  padding: 25px;
+}
+
+.nav-left, .nav-right {
+  border: 1px solid #000;
+  display: inline-block;
+  width: 50%;
+}
+
+.nav-right {
+  text-align: right;
+}
+
+.nav-menu-item {
+  color: inherit;
+  cursor: pointer;
+  margin-left: 10px;
+  text-decoration: inherit;
+
+  &:hover {
+    color: $color-primary;
+  }
+}

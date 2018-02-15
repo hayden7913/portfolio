@@ -19,17 +19,18 @@ module.exports = merge(common, {
   //     },
   //   ],
   // },
-  module: {
-    loaders: [
-      {
-        test: /(\.scss$|\.css$)/,
-        exclude: /node_modules/,
-        include: path.resolve(__dirname, 'src', 'styles'),
-        loaders: ['style-loader', 'css-loader', 'sass-loader'],
-      },
-    ],
-  },  plugins: [
-    new CleanWebpackPlugin(['bundle']),
+  // module: {
+  //   loaders: [
+  //     {
+  //       test: /(\.scss$|\.css$)/,
+  //       exclude: /node_modules/,
+  //       include: path.resolve(__dirname, 'src', 'styles'),
+  //       loaders: ['style-loader', 'css-loader', 'sass-loader'],
+  //     },
+  //   ],
+  // },
+    plugins: [
+    new CleanWebpackPlugin(['build']),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('production'),
     }),
