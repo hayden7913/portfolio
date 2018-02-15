@@ -6,11 +6,11 @@
 }
 
 .portfolio-app-screenshot-container {
-  width: 760px;
   margin: 0 auto;
+  width: 75%;
 }
 
 .portfolio-app-screenshot {
   border: 1px solid $grey-light;
-  width: 100%;
+  max-width: 100%;
 }
