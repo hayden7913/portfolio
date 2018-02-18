@@ -10,9 +10,9 @@ export default function Nav() {
           <span className="nav-name">Hayden HarkWright</span>
         </div>
         <div className="nav-right">
-          <Link to="/hello" className="nav-menu-item">About</Link>
-          <Link to="/hello" className="nav-menu-item">Portfolio</Link>
-          <Link to="/hello" className="nav-menu-item">Contact</Link>
+          <Link to="/" className="nav-menu-item">About</Link>
+          <Link to="/portfolio" className="nav-menu-item">Portfolio</Link>
+          <Link to="/contact" className="nav-menu-item">Contact</Link>
         </div>
       </div>
     </nav>

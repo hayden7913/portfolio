@@ -1,22 +1,3 @@
-section {
-  &.row {
-    margin-bottom: 30px;
-  }
-}
-
-.image-col {
-  padding-top: 20px;
+.col-screenshot {
   text-align: center;
-}
-
-.col-frustrated-lg-scrn {
-  @include respond-to(medium-screens) {
-    @include hide();
-  }
-}
-
-.col-frustrated-small-scrn {
-  @include respond-to(wide-screens) {
-    @include hide();
-  }
 }

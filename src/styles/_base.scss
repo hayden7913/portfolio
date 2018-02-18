@@ -28,8 +28,9 @@ form {
 }
 
 h1 {
- font-size: 2em;
- font-weight: bold;
+  font-size: 2.1em;
+  font-weight: 600;
+  line-height: 1.5;
 }
 
 h3 {
@@ -57,8 +58,7 @@ p {
 }
 
 section {
-  font-size: 1.7em;
-  text-align: center;
+  margin-top: 100px;
 }
 
 @include placeholder() {
