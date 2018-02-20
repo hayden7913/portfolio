@@ -9,7 +9,7 @@ export default function LandingPage() {
     <div>
       <Nav />
       <div className="container">
-          {Routes}
+        {Routes}
       </div>
     </div>
   );

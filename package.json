@@ -2,9 +2,9 @@
   "name": "react-boilerplate",
   "version": "0.0.0",
   "scripts": {
-    "start": "node server.js || true",
+    "start": "node webpack.server.js || true",
     "build": "webpack --config webpack.prod.js || true",
-    "deploy": "npm run build && git cp 'Builds project for deployment' && git push heroku master || true",
+    "deploy": "npm run build && git cp 'Updates build for deployment' && git push heroku master || true",
     "lint:fix": "eslint --fix --ext .js ./ || true",
     "lint": "eslint --ext .js ./  || true"
   },

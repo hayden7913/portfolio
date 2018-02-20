@@ -3,8 +3,15 @@
 }
 
 body {
-  font-family: $font-main;
-  color: $black-faded
+  color: $black-faded;
+  font-family: $font-primary;
+  padding: 25px;
+  padding-top: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
 }
 
 button {
@@ -12,7 +19,7 @@ button {
   border: 0;
   cursor: pointer;
   display: inline-block;
-  font-family: $font-main;
+  font-family: $font-primary;
   font-size: 16px;
   font-weight: 500;
   padding: 1em 2em;
@@ -55,10 +62,6 @@ main {
 
 p {
   line-height: 1.75;
-}
-
-section {
-  margin-top: 100px;
 }
 
 @include placeholder() {

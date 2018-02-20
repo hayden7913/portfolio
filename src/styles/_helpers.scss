@@ -1,5 +1,11 @@
 .container {
+  border: 1px solid $test-border-color;
   margin: 0 auto;
-  padding: 0 20px;
+  max-width: 100%;
   width: 1200px;
+}
+
+.link {
+  color: $color-primary;
+  text-decoration: underline;
 }

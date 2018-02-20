@@ -1,8 +1,23 @@
 .about-heading {
-
+ font-size: 3.5em;
 }
 
-.about-paragraph {
-  font-size: 1.2em;
-  width: 760px;
+// .about-paragraph {
+// }
+
+.about-paragraph, .about-contact-wrapper  {
+  color: black;
+  font-family: $font-secondary;
+  font-size: 1.4em;
+  font-weight: 300;
+  max-width: 100%;
+  width: 850px;
+}
+
+.about-contact-wrapper {
+  font-size: 1.3em;
+}
+
+.about-section {
+  margin-top: 10%;
 }

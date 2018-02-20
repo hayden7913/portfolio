@@ -1,13 +1,13 @@
 .nav {
   // border: 1px solid #000;
-  color: black;
+  color: $black-faded;
   font-weight: 400;
-  font-size: 1.1em;
-  padding: 25px 0;
+  font-size: 1.25em;
+  padding: 50px 0;
 }
 
 .nav-left, .nav-right {
-  border: 1px solid #000;
+  border: 1px solid $test-border-color;
   display: inline-block;
   width: 50%;
 }
@@ -25,4 +25,9 @@
   &:hover {
     color: $color-primary;
   }
+}
+
+.nav-name {
+  color: black;
+  font-weight: 500;
 }

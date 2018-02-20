@@ -1,7 +1,7 @@
 // colors
 $black-faded: #424242;
 $blue: #3e86c7;
-$green: #2AB366;
+$green: #33b85e;
 $green-light: #3dcb81;
 $green-dark: #01A150;
 $grey-light: #e2e2e2;
@@ -15,16 +15,18 @@ $white: #ffffff;
 $teal: #49ada4;
 $indigo: #4055d4;
 
-$color-primary: $indigo;
+$color-primary: $green;
 
 $test-border-color: transparent;
-$test-border-color: black;
+// $test-border-color: black;
 
 //fonts
-// $font-main: 'Montserrat';
-$font-main:  'Open Sans', sans-serif;
-// $font-main:  'Lato', sans-serif;
+// $font-primary: 'Montserrat';
+$font-primary:  'Open Sans', sans-serif;
+// $font-primary:  'Lato', sans-serif;
+// $font-secondary: 'Times New Roman';
 $font-secondary: 'Roboto';
+// $font-secondary: 'Lato';
 
 // breakpoints
 $break-mobile: 480px;

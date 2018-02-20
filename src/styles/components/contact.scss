@@ -1,0 +1,18 @@
+.contact {
+  color: black;
+  font-size: 1.4em;
+  margin-top: 10%;
+  position: relative;
+  text-align: center;
+}
+
+.contact-footer {
+  bottom: 0;
+  left: 50%;
+  margin-bottom: 20px;
+  position: absolute;
+  transform: translateX(-50%);
+  // @include transform() {
+  //
+  // }
+}
