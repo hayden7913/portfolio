@@ -14,7 +14,7 @@ export default function Portfolio() {
       />
       <PortfolioItem
         alt="portfolio demo item"
-        imgSrc="/images/laptop-pomtracker.png"
+        imgSrc="/public/images/laptop-pomtracker.png"
         demoUrl="http://pcb-flow.herokuapp.com/"
         repoUrl="https://github.com/hayden7913/PomTracker-Capstone"
         title="Pomtracker"
