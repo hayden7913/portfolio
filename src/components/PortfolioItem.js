@@ -20,9 +20,12 @@ export default function PortfolioItem({ alt, demoUrl,  imgSrc, repoUrl, title, d
           </a>
           <p>{description}</p>
           <div className="portfolio-tech-icons">
-            <span className="icon-react"> </span>
-            <span className="icon-nodejs"> </span>
-            <span className="icon-mongodb"> </span>
+            {/* <span className="icon-react"></span>
+            <span className="icon-nodejs"></span>
+            <span className="icon-mongodb"></span> */}
+            <span className="tech-icon-react"> </span>
+            <span className="tech-icon-nodejs"> </span>
+            <span className="tech-icon-mongodb"> </span>
           </div>
           <Link className="portfolio-link" to={repoUrl}>Repo</Link>
           <span> | </span>

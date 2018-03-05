@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
 import Root from './containers/Root';
 
-// import './styles/icons/technology-icons.css';
+import './styles/icons/technology-icons.css';
 import './styles/icons/style.css';
 import './styles/index.scss';
 
