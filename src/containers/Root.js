@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Provider } from 'react-redux';
-import { Route, HashRouter  } from 'react-router-dom';
-import { ConnectedRouter } from 'react-router-redux';
+import { HashRouter  } from 'react-router-dom';
 
 import LandingPage from '../components/LandingPage';
 

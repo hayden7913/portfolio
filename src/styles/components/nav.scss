@@ -1,25 +1,30 @@
 .nav {
   // border: 1px solid #000;
+  border-bottom: 1px solid $grey-light;
   color: $black-faded;
   font-weight: 400;
   font-size: 1.25em;
-  padding: 50px 0;
+  // padding: 50px 0;
+  // padding: 25px 10px;
 }
 
 .nav-left, .nav-right {
   border: 1px solid $test-border-color;
-  display: inline-block;
-  width: 50%;
+  // width: 50%;
 }
 
 .nav-right {
-  text-align: right;
+  margin-top: 10px;
+  // text-align: right;
+  text-align: left;
 }
 
 .nav-menu-item {
   color: inherit;
   cursor: pointer;
+  display: block;
   margin-left: 20px;
+  margin-top: 15px;
   text-decoration: inherit;
 
   &:hover {

@@ -1,9 +1,11 @@
+const express = require('express')
 var webpack = require('webpack');
 var WebpackDevServer = require('webpack-dev-server');
 const chalk = require('chalk');
 var config = require('./webpack.dev');
 
-process.env.NODE_ENV = 'production'
+const app = express()
+app.use(express.static('public'))
 
 new WebpackDevServer(webpack(config), {
   publicPath: config.output.publicPath,

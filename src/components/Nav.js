@@ -8,6 +8,7 @@ export default function Nav() {
       <div className="container">
         <div className="nav-left">
           <span className="nav-name">Hayden HarkWright</span>
+          <span className="nav-menu-icon icon-menu-2"></span>
         </div>
         <div className="nav-right">
           <Link to="/" className="nav-menu-item">About</Link>
