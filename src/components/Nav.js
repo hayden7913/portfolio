@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Portfolio from './Portfolio';
 
-export default function Nav() {
+export default function Nav({ onMenuClick }) {
   return (
     <nav className="nav">
       <div className="container">
         <div className="nav-left">
           <span className="nav-name">Hayden HarkWright</span>
-          <span className="nav-menu-icon icon-menu-2"></span>
+          <span className="nav-menu-icon icon-menu-2" onClick={onMenuClick}></span>
         </div>
         <div className="nav-right">
           <Link to="/" className="nav-menu-item">About</Link>

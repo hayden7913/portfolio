@@ -1,14 +1,16 @@
-const express = require('express')
-var webpack = require('webpack');
-var WebpackDevServer = require('webpack-dev-server');
+const path = require('path');
+const express = require('express');
+const webpack = require('webpack');
+const WebpackDevServer = require('webpack-dev-server');
 const chalk = require('chalk');
-var config = require('./webpack.dev');
+const config = require('./webpack.dev');
 
 const app = express()
 app.use(express.static('public'))
 
 new WebpackDevServer(webpack(config), {
   publicPath: config.output.publicPath,
+  contentBase: path.join(__dirname, "public"),
   hot: true,
   historyApiFallback: true,
   stats: {

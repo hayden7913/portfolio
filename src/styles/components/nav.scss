@@ -1,9 +1,10 @@
 .nav {
-  // border: 1px solid #000;
+  border: 1px solid #000;
   border-bottom: 1px solid $grey-light;
   color: $black-faded;
   font-weight: 400;
   font-size: 1.25em;
+  position: relative;
   // padding: 50px 0;
   // padding: 25px 10px;
 }
@@ -30,6 +31,11 @@
   &:hover {
     color: $color-primary;
   }
+}
+.nav-menu-icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
 
 .nav-name {
