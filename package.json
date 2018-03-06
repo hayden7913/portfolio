@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/gaearon/redux-devtools#readme",
   "dependencies": {
+    "classnames": "^2.2.5",
     "express": "^4.16.2",
     "history": "^4.7.2",
     "prop-types": "^15.5.7",

@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
+import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 import Portfolio from './Portfolio';
 
-export default function Nav({ onMenuClick }) {
+export default function Nav({ areLinksHidden, onMenuClick }) {
+  console.log(areLinksHidden);
+  const navClass = classNames('nav', {
+    'is-active': areLinksHidden
+  });
+
   return (
-    <nav className="nav">
+    <nav className={navClass}>
       <div className="container">
         <div className="nav-left">
           <span className="nav-name">Hayden HarkWright</span>

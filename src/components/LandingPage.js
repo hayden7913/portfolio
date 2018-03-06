@@ -18,9 +18,10 @@ export default class LandingPage extends Component {
   }
 
   render() {
+    const { areLinksHidden } = this.state;
     return (
       <div>
-        <Nav onMenuClick={this.toggleNavLinks} />
+        <Nav areLinksHidden={areLinksHidden} onMenuClick={this.toggleNavLinks} />
         <div className="container">
           {Routes}
         </div>
