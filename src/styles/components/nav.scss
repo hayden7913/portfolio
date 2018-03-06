@@ -1,10 +1,16 @@
 .nav {
-  border: 1px solid #000;
   border-bottom: 1px solid $grey-light;
   color: $black-faded;
   font-weight: 400;
   font-size: 1.25em;
+  overflow: hidden;
   position: relative;
+  height: 50px;
+  transition: height .4s ease;
+
+  &.is-active {
+    height: 165px;
+  }
   // padding: 50px 0;
   // padding: 25px 10px;
 }
@@ -15,7 +21,6 @@
 }
 
 .nav-right {
-  margin-top: 10px;
   // text-align: right;
   text-align: left;
 }
@@ -32,10 +37,11 @@
     color: $color-primary;
   }
 }
+
 .nav-menu-icon {
   position: absolute;
   right: 10px;
-  top: 10px;
+  top: 13px;
 }
 
 .nav-name {

@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-
+import { withRouter } from  'react-router';
 import Portfolio from './Portfolio';
 import Nav from './Nav';
 import Routes from '../routes';
 
-export default class LandingPage extends Component {
+class LandingPage extends Component {
   constructor() {
     super();
     this.state = {
@@ -29,3 +29,5 @@ export default class LandingPage extends Component {
     );
   }
 }
+
+export default withRouter(LandingPage);
