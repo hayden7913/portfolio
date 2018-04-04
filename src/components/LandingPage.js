@@ -19,9 +19,11 @@ class LandingPage extends Component {
 
   render() {
     const { areLinksHidden } = this.state;
+    const { pathname } = this.props.history.location;
+
     return (
       <div>
-        <Nav areLinksHidden={areLinksHidden} onMenuClick={this.toggleNavLinks} />
+        <Nav areLinksHidden={areLinksHidden} currentRoute={pathname} onMenuClick={this.toggleNavLinks} />
         <div className="container">
           {Routes}
         </div>

@@ -1,4 +1,7 @@
 // colors
+$test-border-color: transparent;
+// $test-border-color: black;
+
 $black-faded: #424242;
 $blue: #3e86c7;
 $green: #33b85e;
@@ -16,9 +19,9 @@ $teal: #49ada4;
 $indigo: #4055d4;
 
 $color-primary: $green;
+$color-primary: $teal;
+$color-primary: #26A69A;
 
-$test-border-color: transparent;
-// $test-border-color: black;
 
 //fonts
 // $font-primary: 'Montserrat';

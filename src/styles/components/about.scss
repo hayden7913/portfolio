@@ -1,26 +1,52 @@
 .about-section {
-  margin-top: 10%;
+  @media only screen and (min-width: 768px) {
+    font-size: 22px;
+    margin-top: 10%;
+  }
+
+  @media only screen and (min-width: 1224px) {
+    font-size: 22px;
+    max-width: 90%;
+  }
+
+  @media only screen and (min-width: 1440px) {
+    max-width: 90%;
+  }
 }
 
 .about-heading {
- // font-size: 3.5em;
- font-size: 2em;
+  font-size: 1.85em;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 2.6em;
+  }
+
+  // @media only screen and (min-width: 1224px) {
+  //   font-size: 2.6em;
+  // }
 }
 
 .about-paragraph, .about-contact-wrapper {
   color: black;
   font-family: $font-secondary;
-  font-size: 1.2em;
   font-weight: 300;
   max-width: 100%;
   width: 850px;
+
+  @media only screen and (min-width: 1224px) {
+  }
 }
 
 .about-contact-wrapper {
-  font-size: 1.1em;
+  // font-size: 1em;
 }
 
 .about-contact-message {
   display: block;
   margin-bottom: 5px;
+
+  @media only screen and (min-width: 768px) {
+    display: inline-block;
+    margin-right: 5px;
+  }
 }

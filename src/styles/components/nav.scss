@@ -2,14 +2,24 @@
   border-bottom: 1px solid $grey-light;
   color: $black-faded;
   font-weight: 400;
-  font-size: 1.25em;
+  height: 50px;
+  line-height: 50px;
   overflow: hidden;
   position: relative;
-  height: 50px;
   transition: height .4s ease;
 
+  @media only screen and (min-width: 768px) {
+    border-bottom: none;
+    line-height: 1;
+    padding: 50px 0;
+  }
+
+  @media only screen and (min-width: 1224px) {
+    font-size: 18px;
+  }
+
   &.is-active {
-    height: 165px;
+    height: 150px;
   }
   // padding: 50px 0;
   // padding: 25px 10px;
@@ -17,23 +27,40 @@
 
 .nav-left, .nav-right {
   border: 1px solid $test-border-color;
-  // width: 50%;
+
+  @media only screen and (min-width: 768px) {
+    display: inline-block;
+    width: 50%;
+  }
 }
 
 .nav-right {
-  // text-align: right;
   text-align: left;
+
+  @media only screen and (min-width: 768px) {
+    text-align: right;
+  }
 }
 
 .nav-menu-item {
   color: inherit;
   cursor: pointer;
   display: block;
+  line-height: 1;
   margin-left: 20px;
-  margin-top: 15px;
+  margin-bottom: 15px;
+  transition: all .2s ease-in-out;
   text-decoration: inherit;
 
+  @media only screen and (min-width: 768px) {
+    display: inline-block;
+  }
+
   &:hover {
+    color: $color-primary;
+  }
+
+  &.is-active {
     color: $color-primary;
   }
 }
@@ -41,7 +68,11 @@
 .nav-menu-icon {
   position: absolute;
   right: 10px;
-  top: 13px;
+  top: 18px;
+
+  @media only screen and (min-width: 768px) {
+    @include hide();
+  }
 }
 
 .nav-name {

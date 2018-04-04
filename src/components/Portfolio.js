@@ -3,30 +3,33 @@ import PortfolioItem from './PortfolioItem';
 
 export default function Portfolio() {
   return (
-    <div>
+    <div className="portfolio-list">
       <PortfolioItem
         alt="portfolio demo item"
         imgSrc="/images/laptop-pcb-flow.png"
         demoUrl="http://pcb-flow.herokuapp.com/"
         repoUrl="https://github.com/hayden7913/bread-pcb-tool"
         title="PCB Flow"
-        description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse nulla pariaturd"
+        techIcons={["react", "sass", "nodejs", "mongodb"]}
+        description="A Drag and drop tool for designing electronic devices. Designed specifically to make electronics design accessible and approachable for non-engineers."
       />
       <PortfolioItem
         alt="portfolio demo item"
         imgSrc="/images/laptop-pomtracker.png"
-        demoUrl="http://pcb-flow.herokuapp.com/"
+        demoUrl="http://pomtracker.herokuapp.com/"
         repoUrl="https://github.com/hayden7913/PomTracker-Capstone"
         title="Pomtracker"
-        description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse nulla pariaturd"
+        techIcons={["react", "sass", "nodejs", "mongodb"]}
+        description="A pomodoro timer with integrated time tracking. I built this app with my own use in mind as I struggled to find exisiting tools for time tracking and the Pomodoro system that worked for me. I use this app every day to manage my pomodoro sessions and keep my weekly productivity goals on track."
       />
       <PortfolioItem
         alt="portfolio demo item"
         imgSrc="/images/laptop-anki-assistant.png"
-        demoUrl="http://pcb-flow.herokuapp.com/"
+        demoUrl="http://anki-assistant.herokuapp.com/"
         repoUrl="https://github.com/hayden7913/AnkiAssistant"
         title="AnkiAssistant"
-        description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse nulla pariaturd"
+        techIcons={["jquery", "sass"]}
+        description="AnkiAssistant leverages the Globse language dictionary API to create a user interface that streamlines making custom Spanish language vocabulary flash card decks on Anki, the excellent spaced repitition based flash card platform."
       />
     </div>
   );

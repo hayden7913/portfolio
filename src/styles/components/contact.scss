@@ -1,9 +1,21 @@
 .contact {
   color: black;
-  font-size: 1.4em;
-  margin-top: 10%;
+  margin-top: 20%;
   position: relative;
   text-align: center;
+  line-height: 2;
+}
+
+.contact-social-media-link {
+  color: $black-faded;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.5em;
+  margin: 10px;
+
+  &:hover {
+    color: black;
+  }
 }
 
 .contact-footer {
